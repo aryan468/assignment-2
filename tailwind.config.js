@@ -1,0 +1,47 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#000000",
+          "900_7f": "#0000007f",
+          "900_2b": "#0000002b",
+          "900_3f": "#0000003f",
+          "900_cc": "#000000cc",
+          "900_39": "#00000039",
+        },
+        gray: {
+          100: "#f1f2f5",
+          200: "#f2efef",
+          500: "#a0a0a0",
+          600: "#737272",
+          700: "#585858",
+          800: "#4e4e4e",
+          900: "#1c1b1f",
+          "600_01": "#71756f",
+          "100_e5": "#f6f6f6e5",
+          "200_01": "#f1efef",
+        },
+        blue_gray: { 100: "#d9d9d9" },
+        light_green: { 100: "#d5f2c8", 800: "#4a7336", A700: "#44d103" },
+        green: { 900: "#216900" },
+        white: { A700: "#ffffff" },
+      },
+      boxShadow: {
+        xs: "0 4px 4px 0 #0000003f",
+        sm: "0 4px 34px 0 #0000003f",
+        md: "0 6px 4px 6px #00000039",
+        lg: "0 4px 22px 0 #0000003f",
+        xl: "0 5.28px 29px 0 #0000002b",
+        "2xl": "0 6.39px 35px 0 #0000002b",
+      },
+      fontFamily: { lato: "Lato", poppins: "Poppins", roundedmplusc: "Rounded Mplus 1c" },
+      textShadow: { ts: "0px 4px 4px #0000003f", ts1: "0px 4px 10px #0000003f" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
